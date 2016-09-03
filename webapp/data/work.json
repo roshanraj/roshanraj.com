@@ -1,0 +1,29 @@
+{
+  "work":[
+    {
+      "name":"Menias",
+      "image":"../images/menias/thumb.png",
+      "link":"/work/menias"
+    },
+     {
+      "name":"Menily",
+      "image":"../images/menily/thumb.png",
+      "link":"/work/menily"
+    },
+     {
+      "name":"Angularjs Seed",
+      "image":"../images/angularjsseed/thumb.png",
+      "link":"/work/angularjs-seed"
+    },
+     {
+      "name":"Open Flush",
+      "image":"../images/openflush/thumb.png",
+      "link":"/work/openflush"
+    },
+     {
+      "name":"Interactive Code tutor",
+      "image":"../images/codetutor/thumb.png",
+      "link":"/work/ict"
+    }
+    ]
+}
