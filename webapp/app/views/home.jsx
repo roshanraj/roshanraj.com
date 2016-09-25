@@ -34,20 +34,28 @@ const HomeView = React.createClass({
             boxShadow:"0 4px 5px #AAA"
         }
         let img = {
-            width:"400",
-            height:"auto"
+            width:"500",
+            height:"auto",
+            position:"absolute",
+            bottom:"0"
         }
         let icon_style = {
             textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)',
             margin:"3rem"
         }
+
         return (
             <div className="container home">
                 <div className="row">
                     <br />
 
-                        <div className="container" style={slide}>
-                            <div className="col-lg-offset-2 col-lg-8 intro" style={{height: this.state.window.height-100}}>
+                        <div className="container no-padding" style={slide}>
+
+                            <div className="col-lg-5 no-padding" style={{position:"relative",height: this.state.window.height-100}}>
+                                <img src="./images/rr.png" style={img} alt="..." className="img-responsive"></img>
+                            </div>
+
+                            <div className=" col-lg-7 intro" style={{height: this.state.window.height-100}}>
 
                                 <div className="col-lg-12" style={{position:"relative",top:"60%",transform:"translateY(-50%)"}}>
 

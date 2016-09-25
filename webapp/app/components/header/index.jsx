@@ -28,7 +28,7 @@ const Header = React.createClass({
                             <img className="" style={{"width":"4.6rem"}} src="/images/rr_logo.png" />
                         </Link>
                     </div>
-                    <div className="collapse navbar-collapse" id="site-nav">
+                    <div className={ClassNames({"collapse navbar-collapse":true,"in":this.state.is_menu_open})} id="site-nav">
                         <Nav togglemenu={this.toggleMenu}/>
                     </div>
                 </div>

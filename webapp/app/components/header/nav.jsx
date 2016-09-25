@@ -41,7 +41,9 @@ const Nav = React.createClass({
                     <Link onClick={this.toggleMenu} to="/work">Work</Link>
                 </li>
 
-                {/*<li className={Classnames({"active": this.context.router.isActive('/experiments', true)})}>
+                {/*
+                        \/api\/[\dA-F]+ -- regex for url matching
+                    <li className={Classnames({"active": this.context.router.isActive('/experiments', true)})}>
                     <Link onClick={this.toggleMenu} to="/experiments">Experiments</Link>
                 </li>
 
@@ -50,7 +52,7 @@ const Nav = React.createClass({
                 </li>
                 */}
                 <li className={Classnames({"active": this.context.router.isActive('/blog', true)})}>
-                    
+
                     <ServerLink onClick={this.toggleMenu} to="http://blog.roshanraj.com/">Blog</ServerLink>
                 </li>
 
