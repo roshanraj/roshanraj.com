@@ -7,6 +7,10 @@ var express = require('express'),
 
 app.use(morgan('combined'))
 
+
+app.use('/work/ict/demo', express.static('webapp/project/learn-pad'));
+app.use('/work/menias/demo', express.static('webapp/project/menias'));
+
 app.use(express.static('webapp'));
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
@@ -20,6 +24,16 @@ app.get('/', function (req, res) {
 app.get('/service/get', function (req, res) {
      res.send("get request");
 });
+
+
+app.get('/work/menias/demo', function (req, res) {
+     res.sendfile('./webapp/project/menias/index.html');
+});
+
+app.get('/work/ict/demo', function (req, res) {
+     res.sendfile('./webapp/project/learn-pad/index.html');
+});
+
 
 app.post('/service/post', function (req, res) {
      res.send("post request");

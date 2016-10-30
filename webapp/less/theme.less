@@ -30,6 +30,12 @@ body {
 
 #site-nav-wrap {
   margin-bottom: 0px;
+  background: #FFF;
+  border:0px;
+  .border{
+      background: linear-gradient(to left, rgba(220, 131, 114, 1), rgba(255, 184, 140, 1));
+      height: 1px;
+  }
   /*font-size: 12px;*/
   .active{
       background: -webkit-linear-gradient(to left, rgba(220, 131, 114, 0.15), rgba(255, 184, 140, 0.5));
@@ -323,6 +329,47 @@ body {
     }
 }
 
+//  footer styling
+.footer{
+
+    .border{
+        background: linear-gradient(to left, rgba(220, 131, 114, 1), rgba(255, 184, 140, 1));
+        height: 1px;
+    }
+}
+.demobutton{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 250px;
+    height: 70px;
+    border: 2px solid #1ECD97;
+    border-radius: -26px;
+    background: transparent;
+    color: #1ECD97;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+    &:active{
+        background-color: #1ECD97;
+        color: #fff;
+    }
+    &:hover{
+        background-color: #1ECD97;
+        color: #fff;
+        text-decoration: none;
+    }
+}
 
 .col-height{
     height:100%;

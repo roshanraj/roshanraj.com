@@ -162,6 +162,9 @@ const Menias = React.createClass({
         </div>
     )
   },
+  demoButton(){
+    return (<a href="/work/menias/demo" className="demobutton">demo</a>)
+  },
   render() {
 
     return (
@@ -188,7 +191,7 @@ const Menias = React.createClass({
             {this.getHomePage()}
             {this.getOnboadingPage()}
             {this.getSearchPage()}
-
+            {this.demoButton()}
 
 
 

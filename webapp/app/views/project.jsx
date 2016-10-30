@@ -2,6 +2,7 @@ import React from 'react';
 import LoadingIndicator from '../components/loadingIndicator';
 import LoadingError from '../components/loadingError';
 import Work from '../components/work/work'
+import Footer from '../components/footer/footer'
 
 const ProjectView = React.createClass({
 
@@ -107,7 +108,7 @@ const ProjectView = React.createClass({
     },
 
     render() {
-        let elem = "";
+        let elem = "", footer = "";
         if(this.state.loading){
             elem = (
                 <LoadingIndicator/>
@@ -118,15 +119,21 @@ const ProjectView = React.createClass({
             );
         }else{
             elem = this.getPeopleFragment();
+            footer = (<Footer />);
         }
 
         return (
-            <div className="container">
-                <div className="row">
-                    <h3></h3>
-                    <br />
-                    {elem}
+            <div>
+                <div className="container">
+                    <div className="row">
+                        <h3></h3>
+                        <br />
+                        {elem}
+                    </div>
+
                 </div>
+                {footer}
+
             </div>
         );
     }

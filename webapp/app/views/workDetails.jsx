@@ -9,7 +9,7 @@ import OpenFlush from '../components/work/openflush';
 import Ict from '../components/work/ict';
 
 import errorHandler from '../utils/errorHandler';
-
+import Footer from '../components/footer/footer';
 
 
 const WorkDetailsView = React.createClass({
@@ -46,11 +46,14 @@ const WorkDetailsView = React.createClass({
     },
 
     render() {
-        
+
         let page_name = this.props.params.workname;
         return (
-            <div className="container workdetails" >
-                {this.getWork(page_name)}
+            <div>
+                <div className="container workdetails" >
+                    {this.getWork(page_name)}
+                </div>
+                <Footer/>
             </div>
         );
     }

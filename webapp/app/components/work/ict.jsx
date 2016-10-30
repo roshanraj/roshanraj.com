@@ -11,6 +11,10 @@ const Ict = React.createClass({
   shouldComponentUpdate() {
     return false;
   },
+
+  demoButton(){
+    return (<a href="/work/ict/demo" className="demobutton">demo</a>)
+  },
   getProblem(){
     return (
         <div>
@@ -90,6 +94,7 @@ const Ict = React.createClass({
                 </div>
             </div>
 
+            {this.demoButton()}
             {this.getProblem()}
 
             {/*home page*/}

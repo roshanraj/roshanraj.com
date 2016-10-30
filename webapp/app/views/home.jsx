@@ -22,8 +22,9 @@ const HomeView = React.createClass({
         // }
         let slide = {
 
-            background: "-webkit-linear-gradient(-45deg, rgba(220, 131, 114, 0.27), rgba(255, 253, 208,0.3))",
-            background: "linear-gradient(-45deg, rgba(220, 131, 114, 0.27), rgba(255, 253, 208, 0.3))"
+            background: "-webkit-linear-gradient(90deg, rgba(220, 131, 114, 0.27), rgba(255, 253, 208,0.3))",
+            background: "linear-gradient(-45deg, rgba(220, 131, 114, 0.27), rgba(255, 253, 208, 0.3))",
+            marginTop: "14"
         }
         let image_panel = {
             minWidth:"200",
@@ -45,17 +46,17 @@ const HomeView = React.createClass({
         }
 
         return (
-            <div className="container home">
-                <div className="row">
+            <div className="col-lg-12 home">
+
                     <br />
 
-                        <div className="container no-padding" style={slide}>
+                        <div className="col-lg-12 no-padding" style={slide}>
 
-                            <div className="col-lg-5 no-padding" style={{position:"relative",height: this.state.window.height-100}}>
+                            <div className="col-lg-4 no-padding" style={{position:"relative",height: this.state.window.height-100}}>
                                 <img src="./images/rr.png" style={img} alt="..." className="img-responsive"></img>
                             </div>
 
-                            <div className=" col-lg-7 intro" style={{height: this.state.window.height-100}}>
+                            <div className=" col-lg-8 intro" style={{height: this.state.window.height-100}}>
 
                                 <div className="col-lg-12" style={{position:"relative",top:"60%",transform:"translateY(-50%)"}}>
 
@@ -111,7 +112,7 @@ const HomeView = React.createClass({
                             </div>
                         </div>
 
-                </div>
+
             </div>
         );
     }
