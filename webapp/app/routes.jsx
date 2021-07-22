@@ -25,7 +25,7 @@ function appendTrailingSlash(nextState, replace) {
 let routes = (
     <Route path="/" component={errorHandler(App)}>
         <IndexRoute component={errorHandler(HomeView)}/>
-        <Route path="/blog" component={errorHandler(ProjectView)}/>
+        {/*<Route path="/blog" component={errorHandler(ProjectView)}/>*/}
 
             {/*<Route path="/work/menily" component={errorHandler(Menily)}/>
             <Route path="/work/menias" component={errorHandler(Menias)}/>

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM  from 'react-dom';
-import {Editor, EditorState, RichUtils} from 'draft-js';
+
 import FontAwesome from 'react-fontawesome';
 
 class Footer extends React.Component {
@@ -42,20 +42,6 @@ class Footer extends React.Component {
                     <FontAwesome
                     className=''
                     name='linkedin'
-                    size='2x'
-                    style={icon_style}
-                /></a>
-                <a href="https://www.facebook.com/roshanrajx64"  target="_blank">
-                    <FontAwesome
-                    className=''
-                    name='facebook'
-                    size='2x'
-                    style={icon_style}
-                /></a>
-                <a href="https://twitter.com/roshanraj_rr"  target="_blank">
-                    <FontAwesome
-                    className=''
-                    name='twitter'
                     size='2x'
                     style={icon_style}
                 /></a>

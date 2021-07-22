@@ -51,10 +51,10 @@ const Nav = React.createClass({
                     <Link onClick={this.toggleMenu} to="/contact">Contact</Link>
                 </li>
                 */}
-                <li className={Classnames({"active": this.context.router.isActive('/blog', true)})}>
+                {/*<li className={Classnames({"active": this.context.router.isActive('/blog', true)})}>*/}
 
-                    <ServerLink onClick={this.toggleMenu} to="http://blog.roshanraj.com/">Blog</ServerLink>
-                </li>
+                    {/*<ServerLink onClick={this.toggleMenu} to="http://blog.roshanraj.com/">Blog</ServerLink>*/}
+                {/*</li>*/}
 
                 {/* <li className={Classnames({"active": this.context.router.isActive('/unmapped-route', true)})}>
                     <Link onClick={this.toggleMenu} to="/unmapped-route">404</Link>

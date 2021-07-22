@@ -67,7 +67,7 @@ const HomeView = React.createClass({
                                     <p className="text-center">
 
                                         I am a <mark>polymath developer</mark> currently working with &nbsp;
-                                        <a className="xavient" href="https://www.xavient.com/">Xavient Information System</a>, Noida.<br/><br/>
+                                        <a className="xavient" href="https://www.telusinternational.com/">Telus International</a>, Vancouver.<br/><br/>
                                         A <b>cyclist</b>, intense lover of <b>music</b> and <b>food</b>.
 
                                         <br/>
@@ -89,20 +89,6 @@ const HomeView = React.createClass({
                                             <FontAwesome
                                             className=''
                                             name='linkedin'
-                                            size='4x'
-                                            style={icon_style}
-                                        /></a>
-                                        <a href="https://www.facebook.com/roshanrajx64"  target="_blank">
-                                            <FontAwesome
-                                            className=''
-                                            name='facebook'
-                                            size='4x'
-                                            style={icon_style}
-                                        /></a>
-                                        <a href="https://twitter.com/roshanraj_rr"  target="_blank">
-                                            <FontAwesome
-                                            className=''
-                                            name='twitter'
                                             size='4x'
                                             style={icon_style}
                                         /></a>
