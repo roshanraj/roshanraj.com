@@ -6,7 +6,7 @@
     "url": "http://developer.xavient.com/repo/rskumar/react_starter.git"
   },
   "dependencies": {
-    "bootstrap": "3.3.5",
+    "bootstrap": "3.4.1",
     "classnames": "2.2.0",
     "font-awesome": "^4.5.0",
     "history": "1.13.0",
