@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   test:
-    runs-on: [self-hosted, linux, x64, gpu]
+    runs-on: [self-hosted, linux, x64]
     name: A job to install MicroK8s
     steps:
     - uses: balchua/microk8s-actions@v0.3.2
