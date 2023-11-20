@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rr-deployment
+  labels:
+    app: rr
+spec:
+  selector:
+    matchLabels:
+      app: rr
+  template:
+    metadata:
+      labels:
+        app: rr
+    spec:
+      containers:
+        - name: nginx
+          image: localhost:32000/rr:latest
+          ports:
+            - containerPort: 80
