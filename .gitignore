@@ -2,7 +2,7 @@
 node_modules
 jspm_packages
 ./webapp/node_modules
-
+.idea
 
 # Optional npm cache directory
 .npm
