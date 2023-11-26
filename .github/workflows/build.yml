@@ -32,7 +32,7 @@ jobs:
             type=raw,value=dev-{{date 'YYYYMMDDhhmm'}}.{{sha}},enable=${{ github.ref_type != 'tag' }}
 
       - name: print registry
-        run: echo "::add-mask::$MY_NAME"+${{secrets.REGISTRY}}
+        run: echo "::debug::$MY_NAME"+${{secrets.REGISTRY}}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
