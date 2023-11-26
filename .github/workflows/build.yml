@@ -31,6 +31,9 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,value=dev-{{date 'YYYYMMDDhhmm'}}.{{sha}},enable=${{ github.ref_type != 'tag' }}
 
+      - name: print registry
+        run: echo "::add-mask::$MY_NAME"+${{secrets.REGISTRY}}
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
@@ -40,6 +43,8 @@ jobs:
           push: true
           tags: ${{ secrets.REGISTRY }}
           labels: ${{ steps.metadata.outputs.labels }}
+
+
 
       - name: Create release
         uses: josephrodriguez/swift-release@v1.1
