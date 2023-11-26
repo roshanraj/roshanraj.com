@@ -31,9 +31,6 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,value=dev-{{date 'YYYYMMDDhhmm'}}.{{sha}},enable=${{ github.ref_type != 'tag' }}
 
-      - name: print registry
-        run: echo "::debug::$secrets.REGISTRY"+${{secrets.REGISTRY}}
-
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
@@ -41,10 +38,8 @@ jobs:
           cache-to: type=gha,mode=max
           context: .
           push: true
-          tags: ${{ secrets.REGISTRY }}
+          tags: 192.168.1.176:32000
           labels: ${{ steps.metadata.outputs.labels }}
-
-
 
       - name: Create release
         uses: josephrodriguez/swift-release@v1.1
