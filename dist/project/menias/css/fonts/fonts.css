@@ -1,0 +1,13 @@
+@import url('font-awesome.css');
+
+/*@font-face{font-family:'GothamThin'; src:url('GothamThin.eot'); src:url('GothamThin.eot?#iefix') format('embedded-opentype'), url('GothamThin.svg#fontawesomeregular') format('svg'), url('GothamThin.woff') format('woff'), url('GothamThin.ttf') format('truetype'); font-weight:normal; font-style:normal;}
+
+@font-face{font-family:'Kalinga'; src:url('Kalinga.eot'); src:url('Kalinga.eot?#iefix') format('embedded-opentype'), url('Kalinga.svg#fontawesomeregular') format('svg'), url('Kalinga.woff') format('woff'), url('Kalinga.ttf') format('truetype'); font-weight:normal; font-style:normal;}
+
+@font-face{font-family:'ZurichBT-Light'; src:url('ZurichBT-Light.eot'); src:url('ZurichBT-Light.eot?#iefix') format('embedded-opentype'), url('ZurichBT-Light.svg#fontawesomeregular') format('svg'), url('ZurichBT-Light.woff') format('woff'), url('ZurichBT-Light.ttf') format('truetype'); font-weight:normal; font-style:normal;}
+
+@font-face{font-family:'ZurichBT-LightCondensed'; src:url('ZurichBT-LightCondensed.eot'); src:url('ZurichBT-LightCondensed.eot?#iefix') format('embedded-opentype'), url('ZurichBT-LightCondensed.svg#fontawesomeregular') format('svg'), url('ZurichBT-LightCondensed.woff') format('woff'), url('ZurichBT-LightCondensed.ttf') format('truetype'); font-weight:normal; font-style:normal;}
+*/
+@font-face{font-family:'lucida grande'; src:url('LucidaGrande.eot'); src:url('LucidaGrande.eot?#iefix') format('embedded-opentype'), url('LucidaGrande.svg#fontawesomeregular') format('svg'), url('LucidaGrande.woff') format('woff'), url('LucidaGrande.ttf') format('truetype'); font-weight:normal; font-style:normal;}
+
+@font-face{font-family:'MyriadPro-Light'; src:url('MyriadPro-Light.eot'); src:url('MyriadPro-Light.eot?#iefix') format('embedded-opentype'), url('MyriadPro-Light.svg#fontawesomeregular') format('svg'), url('MyriadPro-Light.woff') format('woff'), url('MyriadPro-Light.ttf') format('truetype'); font-weight:normal; font-style:normal;}

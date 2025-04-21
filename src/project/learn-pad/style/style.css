@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face
+{
+	font-family:addon;
+	src:url(../fonts/lucida-grande-regular.ttf);
+}
+
+
+body
+{
+	overflow-x:hidden;
+	font-family:addon;
+	color:#444;
+}
+
+tr
+{
+	color: #428bca;
+}
+
+td
+{
+	/*border-top:2px #CACAFF solid;*/
+	cursor:pointer;
+}
+
+.shadow
+{
+	box-shadow: 0 5px 10px #DFDFDF;
+	-webkit-box-shadow: 0 5px 10px #DFDFDF;
+	-moz-box-shadow:0 5px 10px #DFDFDF;
+}
+
+
+#lk
+{
+	font-size: 44px;
+	border-right-width: 8px;
+	border-right-style: solid;
+	border-right-color: rgb(226, 226, 226);
+	
+	border-left-width: 8px;
+	border-left-style: solid;
+	border-left-color: rgb(190, 190, 190);
+
+	
+}
+
+
+
+.imgprop
+{
+	width:40px;
+	height:auto;
+}
+
+/* properties */
+  	
+.but
+{
+	width: 40px;
+		height: 40px;
+		border: 9px #444 solid;
+		border-radius: 20px;
+		text-align: center;
+		line-height: 40px;
+		font-weight:bold;
+}
+	
+      
+	  
+	  
+	  /* Styles specific to this particular page */
+.scroll-pane
+{
+	width: 100%;
+	height: 750px;
+	overflow: auto;
+}
+
+
+.button
+{
+	background-color: #ccc;
+border: 1px solid #ccc;
+display: inline-block;
+zoom: 1;
+line-height: 1.3;
+color: #f9f9f9;
+text-transform: uppercase;
+cursor: pointer;
+text-align: center;
+-moz-border-radius: 2px;
+border-radius: 2px;
+	
+	background: #007fb8;
+	border: 1px solid #004b91;
+	background: -moz-linear-gradient(top,#007fb8 1%,#6ebad5 3%,#007fb8 7%,#007fb8 100%);
+	background: -webkit-linear-gradient(top,#007fb8 1%,#6ebad5 3%,#007fb8 7%,#007fb8 100%);
+	background: -o-linear-gradient(top,#007fb8 1%,#6ebad5 3%,#007fb8 7%,#007fb8 100%);
+	background: -ms-linear-gradient(top,#007fb8 1%,#6ebad5 3%,#007fb8 7%,#007fb8 100%);
+	background: linear-gradient(to bottom,#007fb8 1%,#6ebad5 3%,#007fb8 7%,#007fb8 100%);
+	
+	
+	
+	width: 259px;
+height: 56px;
+font-size: 33px;
+
+
+top: 906px;
+left: 444px;
+position: absolute;
+}
+
+
+
+code {
+  padding: 0 2px;
+}

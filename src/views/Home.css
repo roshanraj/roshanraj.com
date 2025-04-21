@@ -53,7 +53,7 @@
     background: linear-gradient(to right, #d70f01, #ff6b08, #f32f01, #da1300);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-size: 500% auto;
+    background-size: 150% auto;
     animation: textShine 5s ease-in-out infinite alternate;
 }
 
@@ -66,4 +66,207 @@
 /*    color: #f32f01; !* Match the gradient color *!*/
 /*    transition: all 0.2s ease-in-out;*/
 /*}*/
+
+
+
+/* style for works page */
+
+.works-page {
+    padding: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.project-card {
+    /* border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+                rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+                rgba(17, 17, 26, 0.1) 0px 16px 56px,
+                rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.tech-stack {
+    margin: 1rem 0;
+}
+
+.tech-tag {
+    background: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-links a:hover {
+    color: #007bff;
+}
+
+/* brand text styling */
+/* Premium metallic gradient alternative */
+.metallic-text {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    background-width: 150%;
+}
+
+.brand-text {
+    display: inline-block;
+    background: linear-gradient(
+        to right,
+        #b8b8b8,
+        #f0f0f0,
+        #b8b8b8
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+/* Shine effect */
+.brand-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.8),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.metallic-text:hover .brand-text::before {
+    left: 100%;
+}
+
+/* Text expansion animation */
+.expanded-text {
+    display: inline-block;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    vertical-align: bottom;
+    transition: max-width 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.metallic-text:hover .expanded-text {
+    max-width: 100px;
+    opacity: 1;
+    width: 55px; 
+}
+
+/* Optional: Add some 3D depth */
+/* Premium metallic gradient alternative */
+.brand-text {
+    background: linear-gradient(
+        to right,
+        #545454,
+        #858585,
+        #c4c4c4,
+        #e0e0e0,
+        #c4c4c4,
+        #858585,
+        #545454
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.metallic-text:hover .brand-text {
+    background: linear-gradient(
+        to right,
+        #373737,
+        #6d6d6d,
+        #a8a8a8,
+        #ffffff,
+        #a8a8a8,
+        #6d6d6d,
+        #373737
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: metallicShine 2s linear infinite;
+}
+
+@keyframes metallicShine {
+    0% {
+        background-position: -200px;
+    }
+    100% {
+        background-position: 200px;
+    }
+}
+
+/* Previous styles remain the same */
+
+.expanded-text {
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease-out;
+    white-space: nowrap;
+}
+
+.letter-dot {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
+
+
+.metallic-text:hover .letter-dot {
+    opacity: 0;
+}
+
 

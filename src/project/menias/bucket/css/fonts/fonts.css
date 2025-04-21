@@ -1,0 +1,6 @@
+@import url('font-awesome.css');
+@font-face{font-family:'lucida grande'; src:url('LucidaGrande.eot'); src:url('LucidaGrande.eot?#iefix') format('embedded-opentype'), url('LucidaGrande.svg#fontawesomeregular') format('svg'), url('LucidaGrande.woff') format('woff'), url('LucidaGrande.ttf') format('truetype'); font-weight:normal; font-style:normal;}
+
+@font-face{font-family:'MyriadPro-Light'; src:url('MyriadPro-Light.eot'); src:url('MyriadPro-Light.eot?#iefix') format('embedded-opentype'), url('MyriadPro-Light.svg#fontawesomeregular') format('svg'), url('MyriadPro-Light.woff') format('woff'), url('MyriadPro-Light.ttf') format('truetype'); font-weight:normal; font-style:normal;}
+
+@font-face{font-family:'myriad-set-pro_text'; src:url('myriad-set-pro_text.eot'); src:url('myriad-set-pro_text.eot?#iefix') format('embedded-opentype'), url('MyriadPro-Light.svg#fontawesomeregular') format('svg'), url('myriad-set-pro_text.woff') format('woff'), url('myriad-set-pro_text.ttf') format('truetype'); font-weight:normal; font-style:normal;}

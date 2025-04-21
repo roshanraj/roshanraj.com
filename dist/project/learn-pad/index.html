@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ad">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>learn-pad</title>
+
+
+
+<link href="style/style.css" type="text/css"  rel="stylesheet" />
+<link href="style/scroll.css" type="text/css"  rel="stylesheet" />
+<link href="style/codemirror.css" type="text/css"  rel="stylesheet" />
+
+
+
+<script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.js" type="text/javascript"></script>
+
+
+
+<!-- the mousewheel plugin - optional to provide mousewheel support -->
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+<script src="js/codemirror.js" type="text/javascript"></script>
+<script src="js/clike.js" type="text/javascript"></script>
+
+
+<script src="js/go.js" type="text/javascript"></script>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+
+    <body style="padding:none; margin:none; margin-top:0px;  background:#FFF; " class="scroll-pane" onload="init()"  >
+
+        <div id="container" >
+                          <!-- Nav tabs -->
+                    
+                        
+                        <!-- Tab panes -->
+                        <div id="tab-content" style="
+                        								top:10px;
+                                                        bottom:10px;
+                        							 padding:20px; 
+                                                    /* background:url(images/bg.jpg); 
+                                                     border-right:2px #CACAFF solid;
+                                                     border-left:2px #CACAFF solid;*/
+                                                      width:94%; 
+                                                     height:2500px; 
+                                                     position:relative; 
+                                                     margin-right:auto; 
+                                                     
+                                                     background: #f2f2f2;
+background: radial-gradient(circle farthest-side at center,#FFF 0,#dae4e4 100%);" class="shadow">
+                          
+                          
+                          
+                          
+                            <div id="menu">
+                      	<table border="0">
+                        	<tr>
+                            	<td id="lk" width="400" align="center" >Logic Kitchen</td>
+                                <td style="border:none;" width="20"></td>
+                                <!--<td style="border:none; background:url(images/bg-main.png);" id="pb">Programming Bakery</td>-->
+                            </tr>
+                        </table>
+                                          
+                        
+                      </div>
+                          
+                          
+                          
+                          
+                          
+                          <h2>What is a logic ??? </h2>
+                          <p>Logic is just a valid reasoning, behind any set of steps, required to accomplish a job. And those steps are called Algorithms.</p>
+                          
+                          
+                          
+                          <div id="example_1">
+                          <p>
+                          	 <span style="font-size:16px; font-weight:bold;">#01 Example</span>
+                             <hr>
+                             Lets take a tea break.... <img src="images/tea13.png" /> Oops!, no cup of tea.
+                                                      
+                          </p>
+                          
+                          
+                          <p>
+                             <b>No issue,</b> Let's prepare it ourselves. 
+                          </p>
+                          
+                          
+                          <p>
+                          <b>#	In a kitchen</b>
+                             
+                          </p>
+                          
+                          
+                          
+                          <p>
+                          	<div id="kitchen">
+                            <b>Resources </b>
+                            	<table>
+                                	<tr>
+                                    	<td align="center"><img class="imgprop" src="images/tea3.png" />
+                                        </td>
+                                        
+                                        <td align="center"><img class="imgprop" style="width:25px;" src="images/salt3.png" />
+                                        </td>	
+                                    </tr>
+                                    
+                                    <tr>
+                                    	<td align="center"><img class="imgprop"  src="images/hot36.png" />
+                                        </td>
+                                        
+                                        <td align="center">
+                                        <img class="imgprop" style="width:60px;" src="images/japan45.png" />
+                                        </td>	
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            
+                            
+                            <div style="position: relative;
+                                         top: -99px;
+                                        left: 261px;">
+                            	<img src="images/down24.png" />	
+                            </div>
+                            
+                            
+                            <div id="steps" style="position: relative;
+                                                    left: 445px;
+                                                    top: -202px;">
+                              <b> Algorithm                      </b>
+                                                    
+                            	<table>
+                                	<tr><td><b>Step <span style="color:#F63;">1</span></b> </td><td style="color:#333;">Start</td></tr>
+                                    <tr><td><b>Step <span style="color:#F63;">2</span></b> </td><td style="color:#333;">boil water</td></tr>
+                                    <tr><td><b>Step <span style="color:#F63;">3</span></b> </td><td style="color:#333;">Put tea bags</td></tr>
+                                    <tr><td><b>Step <span style="color:#F63;">4</span></b> </td><td style="color:#333;">Add sugar as per need</td></tr>
+                                    <tr><td><b>Step <span style="color:#F63;">5</span></b> </td><td style="color:#333;">Stop, time for a cup of hot tea</td></tr>
+                                </table>
+                            </div>
+                            
+                            
+                            
+                                
+                            <div style="position: relative;
+                                        top: -317px;
+                                        left: 810px">
+                            	<img src="images/down24.png" />	
+                            </div>
+                            
+                            
+                            
+                            <div id="process" style="position: relative;top: -423px;left: 939px;">
+                            <b> Processing and Result                      </b>
+                            <table>
+                                	<tr>
+                                    	<td align="center"><img style="width:20px;"  src="images/tea3.png" />
+                                        </td>
+                                        
+                                        <td align="center"><img style="width:10px;" src="images/salt3.png" />
+                                        </td>	
+                                    </tr>
+                                    
+                                    <tr>
+                                    	<td align="center"><img style="width:20px;"  src="images/hot36.png" />
+                                        </td>
+                                        
+                                        <td align="center">
+                                        <img class="imgprop" style="width:20px;" src="images/japan45.png" />
+                                        </td>	
+                                    </tr>
+                                </table>
+                          		<img src="images/funnel12.png" style="width: 48px;height: auto;" /></br>
+                                <img src="images/cup8.png" style="width: 49px;height: auto;" />
+                            </div>
+                            
+                            <div id="Logic" style="position: relative;top: -410px;">
+                           <b> Logic validates the action/sets. Like in this example </b>
+                                   <table>
+                                	<tr><td><img src="images/cooking15.png" style="width:30px; height:auto;" /></td><td width="10"></td><td style="color:#333;"><b>Boil water</b> other wish no tea leaf extracts would mix up. There for no tea. </td></tr>
+                                    <tr><td></td><td style="color:#333;"></td></tr>
+                                    <tr><td><img src="images/salt3.png" style="width:30px; height:auto;" /> </td><td width="10"></td><td style="color:#333;">Why <b>sugar</b>, Why not <b>salt</b></td></tr>
+                                   
+                                </table>    
+                                
+                             Reasoning behind each step we took is a result of <b>logical analysis</b>                    	
+                            </div>
+                            
+                          </p>
+                          
+                          
+                          
+                          
+                          
+                         
+                          
+                          
+                      
+                          
+                          <!--- box for algorithms, box holder , operator holder --->
+                          
+                          
+                          </div>
+                    
+                          <div id="example_2" style="position: relative;top: -298px;">
+                                  <p>
+                                     <span style="font-size:16px; font-weight:bold;">#02 Example</span>
+                                     <hr>
+                                     Lets pick two numbers and do some operations on it. 
+                                                              
+                                  </p>
+                                  
+                                  <div id="num_box">
+                                  	<table border="0" width="100%" height="500">
+                                    	<tr>
+                                        	<td style="di">
+                                            	<div id="1" class="but" style="position: absolute;top: 98px;left: 12px;">1</div>
+                                                <div id="2" class="but" style="position: absolute;top: 98px;left: 82px;">2</div>
+                                                <div id="3"  class="but" style="position: absolute;top: 98px;left: 152px;">3</div>
+                                                <div id="4"  class="but" style="position: absolute;top: 98px;left: 222px;">4</div>
+                                                
+                                                <div id="5"  class="but" style="position: absolute;top: 168px;left: 12px;">5</div>
+                                                <div id="6"  class="but" style="position: absolute;top: 168px;left: 82px;">6</div>
+                                                <div id="7"  class="but" style="position: absolute;top: 168px;left: 152px;">7</div>
+                                                <div id="8"  class="but" style="position: absolute;top: 168px;left: 222px;">8</div>
+                                                
+                                                <div id="9"  class="but" style="position: absolute;top: 239px;left: 12px;">9</div>
+                                                <div id="0"  class="but" style="position: absolute;top: 239px;left: 82px;">0</div>
+                                                
+                                                <div id="0"  style="position: absolute;top: 337px;left: -8px;">Pick any two numbers and drag them to the <b>processor</b></div>
+                                            </td>
+                                            <td>
+                                            	<div id="+" class="but" style="position: absolute;top: 98px;left: 441px;">+</div>
+                                                <div id="-" class="but" style="position: absolute;top: 98px;left: 503px;">-</div>
+                                                <div id="/"  class="but" style="position: absolute;top: 98px;left: 573px;">/</div>
+                                                <div id="*"  class="but" style="position: absolute;top: 98px;left: 643px;">*</div>
+                                            
+                                            	 <div id="0"  style="position: absolute;top: 337px;left: 494px;">Select an  <b>operator</b></div>
+                                            </td>
+                                            <td>
+                                            
+                                            <div id="drag_holder" style="width: 360px;
+                                                                            height: 233px;
+                                                                            border: 5px #333 solid;
+                                                                            border-radius: 6px;
+                                                                            position: absolute;
+                                                                            top: 85px;
+                                                                            left: 859px;"></div>
+                                             <div id="0"  style="position: absolute;top: 337px;left: 953px;">Drag items to <b>Processor</b></div>
+                                            
+                                            </td>
+                                        </tr>
+                                        
+                                      
+                                    </table>
+                                  
+                                    <button type="button" class="button" value="Execute" onclick="Ope()">
+                                        <img src="images/three115.png" style="width:30px; height:auto;" alt="submit"  />   Execute
+                                    </button>
+                                    
+                                    <div id="cover" style="width:310px; height:260px; position:absolute; top:50px; left:420px; background:rgba(3,3,3,0.3);"></div>
+                                    
+                                    
+                                    <div id="tool" style="top:370px; width:100%; height:500px; left:0px; position:absolute;">
+                                    	<table width="100%" height="500" border="0" style="cursor:default;">
+                                        	<tr>
+                                            	<td width="48%" style="border:2px solid #333; border-radius:5px;">
+                                                	<table width="100%" height="100%" border="0">
+                                                    	<tr><td height="4" align="center"><b>Algorithm</b></td></tr>
+                                                        <tr><td><div id="Algorithm" style="top: 53px;position: absolute;"></div></td></tr>
+                                                    </table>
+                                                </td>
+                                                
+                                                <td width="10"></td>
+                                                
+                                                <td width="48%" style="border:2px solid #333; border-radius:5px;">	
+                                                	 <div id="myDiagram" style="border: solid 1px gray; height: 420px"></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    	
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                   <div id="text" style=" width:100%; position:absolute; height:600px; width:300px; top:420px; left:300px;"> 
+                                    
+                                    <textarea id="c-code">
+ 
+                                           
+                                          
+                                            </textarea>
+                                    </div>
+                                    
+                                    
+                                    
+                                  </div>
+                                  
+                          
+                          </div>
+                          
+                        </div>
+                        
+       </div>       
+            
+        <textarea id="mySavedModel" style=" display:none; width:100%;height:300px">{ "class": "go.GraphLinksModel",
+  "linkFromPortIdProperty": "fromPort",
+  "linkToPortIdProperty": "toPort",
+  "nodeDataArray": [
+{"category":"Comment", "loc":"360 -10", "text":"Operations on two number", "key":-13},
+{"key":0, "category":"Start", "loc":"575 0", "text":"Start"},
+{"key":2, "loc":"475 70", "text":"Take 8 as a"},
+{"key":3, "loc":"375 140", "text":"Take 7 as b"},
+{"key":4, "loc":"275 210", "text":"Sum = a+b"},
+{"key":5, "loc":"175 280", "text":"Display Sum"},
+{"key":-2, "category":"End", "loc":"75 350", "text":"Enjoy!"}
+ ],
+  "linkDataArray": [
+{"from":0, "to":2, "fromPort":"B", "toPort":"T"},
+{"from":2, "to":3, "fromPort":"B", "toPort":"T"},
+{"from":3, "to":4, "fromPort":"B", "toPort":"T"},
+{"from":4, "to":5, "fromPort":"B", "toPort":"T"},
+{"from":5, "to":-2, "fromPort":"B", "toPort":"T"}
+ ]}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ {"class":"go.GraphLinksModel","linkFromPortIdProperty":"fromPort","linkToPortIdProperty":"toPort",
+ "nodeDataArray":
+ [
+ {"category":"Comment","loc":"360 -10","text":"Operations on two number","key":-13,"__gohashid":189},
+ {"key":0,"loc":"575 0","text":"Start","__gohashid":190},
+ {"key":-3,"loc":"475 70","text":"Take 4 as a","__gohashid":191},
+ {"key":-4,"loc":"375 140","text":"Take 3 as b","__gohashid":205},
+ {"key":"+(i-1)+","category":"Start","loc":"275 210","text":"mul = a*b","__gohashid":218}
+ ,{"key":1,"loc":"175 280","text":"Display mul","__gohashid":219},
+ {"key":-2,"category":"Stop","loc":"75 350","text":"mul = a*b","__gohashid":220}
+ ]
+ ,"linkDataArray":
+ [
+ {"from":0,"to":1,"fromPort":"B","toPort":"T","__gohashid":193},
+ {"from":0,"to":1,"fromPort":"B","toPort":"T","__gohashid":194},
+ {"from":0,"to":1,"fromPort":"B","toPort":"T","__gohashid":207},
+ {"from":1,"to":2,"fromPort":"B","toPort":"T","__gohashid":222},
+ {"from":1,"to":2,"fromPort":"B","toPort":"T","__gohashid":223},
+ {"from":1,"to":-2,"fromPort":"B","toPort":"T","__gohashid":224}]}
+  
+  
+  </textarea>    
+            
+            
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52446574-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+    
+    </body>
+
+
+
+</html>
+

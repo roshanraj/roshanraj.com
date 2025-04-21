@@ -5,17 +5,32 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './Home.css'
+
+import meniasThumb from '@/assets/images/menias/thumb.png'
+import menilyThumb from '@/assets/images/menily/thumb.png'
+import angularSeedThumb from '@/assets/images/angularjsseed/thumb.png'
+import openFlushThumb from '@/assets/images/openflush/thumb.png'
+import codeTutorThumb from '@/assets/images/codetutor/thumb.png'
+import rr from '@/assets/rr.png'
+
+
 export const Navbar = () => {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
     const toggleNavbar = () => {
         setIsCollapsed(!isCollapsed);
     };
-
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-sp">
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/">r.raj</Link>
+                <Link className="navbar-brand" to="/">
+                    <span className="brand-text metallic-text">
+                        <span className="letter-r">r</span>
+                        <span className="expanded-text">oshan&nbsp;</span>
+                        <span className="letter-dot hidden-dot">.</span>
+                        <span className="letter-raj">raj</span>
+                    </span>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -53,7 +68,7 @@ export const Home = () => {
     return (
         <div className="home page row">
             <div className="col-lg-6 pp">
-                <img src="src/assets/rr.png" alt="placeholder" />
+                <img src={rr} alt="placeholder" />
             </div>
             <div className="col-lg-6 intro">
                 <div className="intro" >
@@ -70,15 +85,12 @@ export const Home = () => {
                                     className=''
                                     name='github'
                                     size='2x'
-
                                 /></a>
-
                             <a href="https://www.linkedin.com/in/roshan-raj-02382589?trk=hp-identity-name"  target="_blank">
                                 <FontAwesome
                                     className=''
                                     name='linkedin'
                                     size='2x'
-
                                 /></a>
                         </div>
                     </div>
@@ -88,10 +100,90 @@ export const Home = () => {
 }
 
 export const Works = () => {
+    const projects = [
+        {
+            title: "Menias",
+            description: "A software development project", // You should add actual description
+            technologies: ["JavaScript", "React"], // Add actual technologies used
+            imageUrl: meniasThumb,
+            githubUrl: "https://github.com/yourusername/menias", // Add if available
+            liveUrl: "/work/menias/demo",
+            type: "Software"
+        },
+        {
+            title: "Menily",
+            description: "A web development project", // You should add actual description
+            technologies: ["JavaScript", "Node.js"], // Add actual technologies used
+            imageUrl: menilyThumb,
+            githubUrl: "https://github.com/yourusername/menily", // Add if available
+            liveUrl: "/work/menily/demo",
+            type: "Website"
+        },
+        {
+            title: "Angularjs Seed",
+            description: "A starter template for AngularJS applications", // You should add actual description
+            technologies: ["AngularJS", "JavaScript"], // Add actual technologies used
+            imageUrl: angularSeedThumb,
+            githubUrl: "https://github.com/roshanraj/angular-webpack-seed", // Add if available
+            liveUrl: "https://github.com/roshanraj/angular-webpack-seed",
+            type: "Software"
+        },
+        {
+            title: "Open Flush",
+            description: "An open-source project", // You should add actual description
+            technologies: ["Java","swing","javafx","networking","socket"], // Add actual technologies used
+            imageUrl: openFlushThumb,
+            githubUrl: "", // Add if available
+            liveUrl: "https://www.youtube.com/watch?v=axxcczqIjsk",
+            type: "Software"
+        },
+        {
+            title: "Interactive Code Tutor",
+            description: "An interactive platform for learning to code", // You should add actual description
+            technologies: ["JavaScript", "Educational Technology"], // Add actual technologies used
+            imageUrl: codeTutorThumb,
+            githubUrl: "https://github.com/yourusername/ict", // Add if available
+            liveUrl: "/work/ict/demo",
+            type: "Software"
+        }
+    ];
+
+    
+
     return (
-        <div className="page">
-            <h2>Works</h2>
-            <p>Here you can showcase your projects or portfolio.</p>
+        <div className="page works-page">
+            <h2 className="text-center mb-5">My Works</h2>
+            
+            <div className="projects-grid">
+                {projects.map((project, index) => (
+                    <div key={index} className="project-card">
+                        <div className="project-image">
+                            <img src={project.imageUrl} alt={project.title} />
+                        </div>
+                        <div className="project-content">
+                            <h3>{project.title}</h3>
+                            <p>{project.description}</p>
+                            <div className="tech-stack">
+                                {project.technologies.map((tech, i) => (
+                                    <span key={i} className="tech-tag">{tech}</span>
+                                ))}
+                            </div>
+                            <div className="project-links">
+                                {project.githubUrl && (
+                                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                                        <FontAwesome name="github" /> Code
+                                    </a>
+                                )}
+                                {project.liveUrl && (
+                                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                                        <FontAwesome name="external-link" /> Live Demo
+                                    </a>
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }

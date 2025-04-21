@@ -6,11 +6,9 @@ html, body, #app{
     background:#efefef;
     /*background-image: url("assets/background.png");*/
     /*color: #fe6507;*/
-
 }
 
 .container {
-
     min-height: 100%;
     min-width: 100%;
 }
